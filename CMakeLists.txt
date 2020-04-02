@@ -1,7 +1,13 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(uvc_camera)
 
-find_package(catkin REQUIRED COMPONENTS cv_bridge camera_info_manager image_transport nodelet roscpp sensor_msgs)
+find_package(catkin REQUIRED COMPONENTS 
+	cv_bridge camera_info_manager image_transport nodelet roscpp sensor_msgs
+	rospy
+    rosbag
+    std_msgs
+    sensor_msgs
+geometry_msgs)
 
 find_package(Boost REQUIRED COMPONENTS thread system)
 
